@@ -1,6 +1,6 @@
 <?php
 include __DIR__ . '/functions/functions.php';
-// session_start();
+session_start();
 
 // if (isset($_SESSION['userInput'])) {
 // if ($_SESSION['userInput'] >= 3 && $_SESSION['userInput'] <= 12) { ?>
