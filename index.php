@@ -22,16 +22,21 @@ $userInput = $_GET['numerocaratteri'];
         <h1 class="text-center">Strong Password Generator</h1>
         <h2 class="text-white text-center">Genera una password sicura</h2>
         <div class="response p-4 rounded-3 w-75 m-auto my-4">
-            /*
+
             <?php if (isset($userInput)) {
-                if ($userInput >= 3 && $userInput <= 12) {
-                    header('Location: ./successPage.php');
-                } else { ?>
+                if ($userInput >= 3 && $userInput <= 12) { ?>
+            <div class="alert alert-success">
+                <span class="text-secondary">La tua password è: </span>
+                <span class="fw-bold ms-2">
+                    <?php echo generaPsw($userInput) ?>
+                </span>
+            </div>
+            <?php } else { ?>
             <div class="alert alert-danger">
                 <h4>La password deve essere compresa tra 3 e 12 caratteri!</h4>
             </div>
             <?php }
-            } ?> */
+            } ?>
         </div>
         <form action="index.php" method="GET" class="bg-white p-4 rounded-3 w-75 m-auto">
             <div class="d-flex justify-content-between align-items-center mb-4">

@@ -7,7 +7,9 @@ session_start();
 <div class="alert alert-success">
     <span class="text-secondary">La tua password è: </span>
     <span class="fw-bold ms-2">
-        <?php echo generaPsw($_SESSION['userInput']) ?>
+    <?php echo ($_SESSION['userInput']) ?>
+<?php echo generaPsw($_SESSION['userInput']) ?>
+
 </span>
 </div>
 <?php
