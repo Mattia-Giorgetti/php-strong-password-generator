@@ -8,3 +8,9 @@ h1 {
 }
 
 
+/* <div class="alert alert-success">
+                <span class="text-secondary">La tua password è: </span>
+                <span class="fw-bold ms-2">
+                    <?php echo generaPsw($userInput) ?>
+                </span>
+            </div> */

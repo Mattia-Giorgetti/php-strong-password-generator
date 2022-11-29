@@ -2,8 +2,9 @@
 
 function generaPsw($inputUtente)
 {
-    // session_start();
+    session_start();
     $inputUtente = $_GET['numerocaratteri'];
+    $_SESSION['userInput'] = $inputUtente;
     if (isset($inputUtente) && !empty($inputUtente)) {
         $characters = "abcdefghijklmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!?&%></()|*+-_[]";
         $charactersLen = strlen($characters);
@@ -14,5 +15,5 @@ function generaPsw($inputUtente)
         }
         return implode($password);
     }
-    // $_SESSION['userInput'] = $inputUtente;
+
 }

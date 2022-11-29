@@ -24,14 +24,9 @@ $userInput = $_GET['numerocaratteri'];
         <div class="response p-4 rounded-3 w-75 m-auto my-4">
             /*
             <?php if (isset($userInput)) {
-                if ($userInput >= 3 && $userInput <= 12) { ?>
-            <div class="alert alert-success">
-                <span class="text-secondary">La tua password è: </span>
-                <span class="fw-bold ms-2">
-                    <?php echo generaPsw($userInput) ?>
-                </span>
-            </div>
-            <?php } else { ?>
+                if ($userInput >= 3 && $userInput <= 12) {
+                    header('Location: ./successPage.php');
+                } else { ?>
             <div class="alert alert-danger">
                 <h4>La password deve essere compresa tra 3 e 12 caratteri!</h4>
             </div>
