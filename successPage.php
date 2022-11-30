@@ -11,6 +11,10 @@ session_start();
             <?php echo ($_SESSION['psw']) ?>
         </span>
     </div>
+    <button class="text-center d-block m-auto mt-5 btn btn-primary"><a class="text-white text-decoration-none"
+            href="index.php">Torna alla
+            home</a></button>
+
 </body>
 
 </html>
